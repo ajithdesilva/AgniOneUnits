@@ -43,13 +43,13 @@ go build -v -buildmode=plugin -ldflags="${LDFLAGS}" -o ${BINARY} ${SOURCE}
 
 echo "building plug-in ......... DONE"
 
-echo "Deploying ${UNIT_NAME} to $1/apps/config/${UNIT_NAME}"
+echo "Deploying ${UNIT_NAME} to $1/apps/units/${UNIT_NAME}.so"
 
-cp ${BINARY} ${DEPLOY_PATH}/apps/units
+cp ${BINARY} $1/apps/units
 
 cd ..
 
-mkdir -p ${DEPLOY_PATH}/apps/config/${UNIT_NAME}
+mkdir -p $1/apps/config/${UNIT_NAME}
 
 cd ./config
 cp ./app.config ./apptemp.config
@@ -62,5 +62,9 @@ sed -i  "s|CONFIG|$1/apps/config/${UNIT_NAME}/${UNIT_NAME}.config|g" ./apptemp.c
 
 mv ./apptemp.config $1/apps/config/${UNIT_NAME}/app.config
 
+
+echo "Deployed  ${UNIT_NAME}.so to $1/apps/units/${UNIT_NAME}.so"
+echo "Deploying ${UNIT_NAME}.config to $1/apps/config/${UNIT_NAME}/${UNIT_NAME}.config
+echo "Deploying app.config to $1/apps/config/${UNIT_NAME}/app.config
 echo "Deploying ${UNIT_NAME} ................... DONE"
 cd ..
