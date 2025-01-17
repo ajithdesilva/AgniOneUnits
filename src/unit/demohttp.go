@@ -1,3 +1,25 @@
+/*
+#########################################################################################
+
+	Author        :   D. Ajith Nilanta de Silva ajithdesilva@gmail.com
+	Class/module  :   demohttp AgniOne Unit
+	Objective     :   Demonstrate AgniOne Unit implementation with the help of AgniOne Application
+						Framework utilizing the build-in AgniOne HTTP plugin
+
+#########################################################################################
+
+	Author                 	Date        	Action      	Description
+
+------------------------------------------------------------------------------------------------------
+
+	Ajith de Silva		05/01/2025	Created 	Created the initial version
+
+	Ajith de Silva		08/01/2025	Updated 	Defined functions with parameters & return values
+
+	Ajith de Silva		10/01/2025	Updated 	Implements methods.
+
+#########################################################################################
+*/
 package main
 
 import (
