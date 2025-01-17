@@ -2,6 +2,8 @@
 
 Application Units for Agni Application Framework
 
-There are 2 default AgniOne Plugins
+This is a demo AgniOne Unit that will utilize the AgniOne HTTP plugin
 
-Please referrer to the relevant folder.
+This unit will be hosted & controlled  by the AgniOne Application Framework
+
+
